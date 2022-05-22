@@ -2,25 +2,27 @@
 import pyautogui
 import pydirectinput
 import time
+import keyboard
+
 
 Shoot_time = 0.4581
 CD_time = 8
-Repeat_time = 5
+Repeat = 99999
+Break_keyboard = "z"
 
-def shoot():
+def Shoot():
     pydirectinput.keyDown('q')
+    print("Shoot!!!!")
     time.sleep(Shoot_time)
     pydirectinput.keyUp('q')
 
-def start():
+def Start():
     print("wait")
     time.sleep(3)
-    print("shoot")
 
-start()
-
-for i in range(Repeat_time):
-    print(i+1)
-    shoot()
+Start()
+for i in range(Repeat):
+    Shoot()
+    print(i,end= " ")
     time.sleep(CD_time)
 
