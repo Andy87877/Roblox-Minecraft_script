@@ -1,2 +1,2 @@
-# Roblox_script
+# Roblox&Minecraft_script
 use pydirectinput
