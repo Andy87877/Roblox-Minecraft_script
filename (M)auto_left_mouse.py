@@ -1,4 +1,3 @@
-# https://www.roblox.com/games/9281034297/8-Goal-Kick-Simulator
 import pyautogui
 import pydirectinput
 import time
